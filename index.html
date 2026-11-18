@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Label Check</title>
+  <meta name="description" content="Scan a food barcode and see in plain words what's good in it, what to watch out for, and what the German ingredient words and E-numbers mean. Uses Open Food Facts data.">
+  <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://world.openfoodfacts.org; img-src 'self' data:; media-src 'self' blob:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Label Check">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="mark" href="#/scan">Label&nbsp;Check</a>
+    <nav>
+      <a href="#/history" data-nav="history">Recent</a>
+      <a href="#/about" data-nav="about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-scan" hidden>
+      <p class="lede">Scan a food barcode to see <strong>what's good in it</strong>, <strong>what to watch out for</strong>, and what the label says in plain English.</p>
+      <div class="viewfinder" id="viewfinder" hidden>
+        <video id="video" playsinline muted></video>
+        <div class="guide" aria-hidden="true"></div>
+      </div>
+      <div class="actions">
+        <button id="camera-btn" class="primary" type="button">Scan a barcode</button>
+      </div>
+      <form id="manual" class="manual" autocomplete="off">
+        <label for="code">or type the number under the barcode</label>
+        <div class="row">
+          <input id="code" name="code" inputmode="numeric" pattern="[0-9]*" maxlength="14" placeholder="4008400402222" required>
+          <button type="submit">Check</button>
+        </div>
+      </form>
+      <p class="status" id="scan-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="view-result" hidden aria-live="polite"></section>
+
+    <section id="view-history" hidden>
+      <h1>Recent</h1>
+      <p class="lede">Kept on this phone only.</p>
+      <ol class="recent" id="recent-list"></ol>
+      <button type="button" id="clear-history" class="quiet">Clear recent scans</button>
+    </section>
+
+    <section id="view-about" hidden>
+      <h1>About</h1>
+      <h2>What you see</h2>
+      <dl class="legend">
+        <dt><span class="tag no">Watch out</span></dt>
+        <dd>High sugar, fat, saturated fat or salt (UK Food Standards Agency levels), ultra-processed food, and colours that EU law says may affect children's attention.</dd>
+        <dt><span class="tag fine">Good</span></dt>
+        <dd>What the product would be allowed to claim on its pack under EU rules: no or low sugar, fat or salt, fibre, protein, low calories.</dd>
+        <dt><span class="tag">Worth knowing</span></dt>
+        <dd>Calories, sweeteners, caffeine, alcohol, and phenylalanine (for people with PKU).</dd>
+      </dl>
+      <p>Values missing from the database are never counted as good. For allergies, always read the allergens printed in bold on the pack.</p>
+      <h2>Always read the pack</h2>
+      <p>Product data comes from <a href="https://openfoodfacts.org" rel="noopener">Open Food Facts</a>, a free database filled in by volunteers. It can be wrong, old, or about a different version of the product. Recipes change. This app is a second look, not a guarantee, and not medical advice.</p>
+      <h2>Privacy</h2>
+      <p>Recent scans are stored only in this browser. When you check a product, its barcode is sent to Open Food Facts, which (like any website) sees your IP address. Nothing else is sent, there is no tracking and no account.</p>
+      <h2>Sources and licences</h2>
+      <p>Product data © Open Food Facts contributors, available under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" rel="noopener">Open Database License</a>; individual contents under the <a href="https://opendatacommons.org/licenses/dbcl/1-0/" rel="noopener">Database Contents License</a>.</p>
+      <p>Barcode reading on iPhone uses <a href="https://github.com/zxing-js/library" rel="noopener">ZXing for JavaScript</a> (Apache-2.0). Explanations of additives and German words were written for this app. App code: MIT, <a href="https://github.com/hemantb16/grocery-label-checker" rel="noopener">source on GitHub</a>.</p>
+    </section>
+  </main>
+
+  <template id="tpl-result">
+    <div class="product">
+      <h1 class="product-name"></h1>
+      <p class="product-meta muted"></p>
+    </div>
+    <section class="short" aria-label="In short"></section>
+    <div class="blocks"></div>
+    <p class="disclaimer">Data is entered by volunteers and can be wrong or out of date. Always check the ingredient list on the pack.</p>
+    <p class="source muted"></p>
+    <div class="actions"><a class="button primary" href="#/scan">Scan another</a></div>
+  </template>
+</body>
+</html>

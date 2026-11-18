@@ -1,0 +1,12 @@
+{
+  "name": "grocery-label-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scan a food barcode and check it against your allergy and diet profile, using Open Food Facts data.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "start": "node scripts/serve.mjs"
+  }
+}

@@ -1,0 +1,232 @@
+{
+ "code": "40084107",
+ "errors": [],
+ "product": {
+  "additives_tags": [
+   "en:e322"
+  ],
+  "allergens_tags": [
+   "en:milk",
+   "en:soybeans"
+  ],
+  "brands": "Kinder",
+  "ingredients": [
+   {
+    "ciqual_food_code": "31004",
+    "ecobalyse_proxy_id": "6f3939f7-408c-45d5-8653-61f3336bf305",
+    "ecobalyse_proxy_name": "Chocolat noir par défaut -2025-",
+    "id": "de:feine-milchschokolade",
+    "ingredients": [
+     {
+      "ciqual_food_code": "31016",
+      "ciqual_proxy_food_code": "31016",
+      "ecobalyse_id": "5fc8032f-ca1c-4497-844b-f9213075eab3",
+      "ecobalyse_name": "Sucre de betterave par défaut -2025-",
+      "id": "en:sugar",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 33.27,
+      "quantity_estimate": 33.27,
+      "text": "Zucker",
+      "vegan": "maybe",
+      "vegetarian": "yes"
+     },
+     {
+      "ciqual_food_code": "19021",
+      "ecobalyse_id": "b6776a28-ec84-4bf3-988c-07b3c29f6136",
+      "ecobalyse_name": "Poudre de lait écrémé FR -2025-",
+      "id": "en:whole-milk-powder",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 9.05,
+      "quantity_estimate": 9.05,
+      "text": "VOLLMILCHPULVER",
+      "vegan": "no",
+      "vegetarian": "yes"
+     },
+     {
+      "id": "de:Kakaobuiter",
+      "is_in_taxonomy": 0,
+      "percent_estimate": 3.57,
+      "quantity_estimate": 3.57,
+      "text": "Kakaobuiter"
+     },
+     {
+      "ciqual_food_code": "16030",
+      "ciqual_proxy_food_code": "16030",
+      "ecobalyse_proxy_id": "35d0ffc8-3043-5012-86f3-4401ab37c5cf",
+      "ecobalyse_proxy_name": "Fève de cacao HORS UE",
+      "id": "en:cocoa-paste",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 1.48,
+      "quantity_estimate": 1.48,
+      "text": "Kakaomasse",
+      "vegan": "yes",
+      "vegetarian": "yes"
+     },
+     {
+      "additive_class": "en:emulsifier",
+      "id": "en:e322",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 0.43,
+      "quantity_estimate": 0.43,
+      "text": "Lecithine",
+      "vegan": "maybe",
+      "vegetarian": "maybe"
+     },
+     {
+      "id": "en:vanillin",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 0,
+      "quantity_estimate": 0,
+      "text": "Vanillin",
+      "vegan": "yes",
+      "vegetarian": "yes"
+     }
+    ],
+    "is_in_taxonomy": 1,
+    "percent": 47,
+    "percent_estimate": 47.5,
+    "quantity_estimate": 47.79,
+    "text": "VOLLMILCHSCHOKOLADE",
+    "vegan": "no",
+    "vegetarian": "yes"
+   },
+   {
+    "ciqual_food_code": "19054",
+    "ecobalyse_id": "b6776a28-ec84-4bf3-988c-07b3c29f6136",
+    "ecobalyse_name": "Poudre de lait écrémé FR -2025-",
+    "id": "en:skimmed-milk-powder",
+    "is_in_taxonomy": 1,
+    "percent": 17,
+    "percent_estimate": 17.5,
+    "quantity_estimate": 17.85,
+    "text": "MAGERMILCHPULVER",
+    "vegan": "no",
+    "vegetarian": "yes"
+   },
+   {
+    "ciqual_food_code": "31016",
+    "ciqual_proxy_food_code": "31016",
+    "ecobalyse_id": "5fc8032f-ca1c-4497-844b-f9213075eab3",
+    "ecobalyse_name": "Sucre de betterave par défaut -2025-",
+    "id": "en:sugar",
+    "is_in_taxonomy": 1,
+    "percent_estimate": 10.9,
+    "quantity_estimate": 10.9,
+    "text": "Zucker",
+    "vegan": "maybe",
+    "vegetarian": "yes"
+   },
+   {
+    "from_palm_oil": "maybe",
+    "id": "en:vegetable-fat",
+    "ingredients": [
+     {
+      "ciqual_food_code": "16129",
+      "ecobalyse_proxy_id": "45658c32-66d9-4305-a34b-21d6a4cef89c",
+      "ecobalyse_proxy_name": "Huile de palme -raffinée- par défaut -2025-",
+      "from_palm_oil": "yes",
+      "id": "en:palm",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 6.08,
+      "quantity_estimate": 6.08,
+      "text": "Palm",
+      "vegan": "yes",
+      "vegetarian": "yes"
+     },
+     {
+      "ciqual_food_code": "16110",
+      "from_palm_oil": "no",
+      "id": "en:shea-butter",
+      "is_in_taxonomy": 1,
+      "percent_estimate": 3.15,
+      "quantity_estimate": 3.15,
+      "text": "Shea",
+      "vegan": "yes",
+      "vegetarian": "yes"
+     }
+    ],
+    "is_in_taxonomy": 1,
+    "percent_estimate": 9.22,
+    "quantity_estimate": 9.22,
+    "text": "Pflanzliche Fette",
+    "vegan": "yes",
+    "vegetarian": "yes"
+   },
+   {
+    "ciqual_food_code": "16401",
+    "ecobalyse_proxy_id": "1dd1d7ed-2266-4317-bb45-709f850bd1e1",
+    "ecobalyse_proxy_name": "Beurre à 39-41% MG, léger, doux Origine Inconnue",
+    "from_palm_oil": "no",
+    "id": "en:butterfat",
+    "is_in_taxonomy": 1,
+    "percent_estimate": 5.64,
+    "quantity_estimate": 5.64,
+    "text": "BUTTERREINFETT",
+    "vegan": "no",
+    "vegetarian": "yes"
+   },
+   {
+    "id": "de:Emulgatos Lecithine",
+    "is_in_taxonomy": 0,
+    "percent_estimate": 4.63,
+    "quantity_estimate": 4.63,
+    "text": "Emulgatos Lecithine"
+   },
+   {
+    "id": "en:vanillin",
+    "is_in_taxonomy": 1,
+    "percent_estimate": 3.98,
+    "quantity_estimate": 3.98,
+    "text": "Vanillin",
+    "vegan": "yes",
+    "vegetarian": "yes"
+   }
+  ],
+  "ingredients_analysis_tags": [
+   "en:palm-oil",
+   "en:non-vegan",
+   "en:vegetarian-status-unknown"
+  ],
+  "ingredients_text": "VOLLMILCHSCHOKOLADE 47 % (Zucker, VOLLMILCHPULVER, Kakaobuiter, Kakaomasse, Emulgator Lecithine (SOJA), Vanillin), MAGERMILCHPULVER (17 %), Zucker, Pflanzliche Fette (Palm, Shea), BUTTERREINFETT, Emulgatos Lecithine (SOJA), Vanillin.",
+  "ingredients_text_de": "VOLLMILCHSCHOKOLADE 47 % (Zucker, VOLLMILCHPULVER, Kakaobuiter, Kakaomasse, Emulgator Lecithine (SOJA), Vanillin), MAGERMILCHPULVER (17 %), Zucker, Pflanzliche Fette (Palm, Shea), BUTTERREINFETT, Emulgatos Lecithine (SOJA), Vanillin.",
+  "ingredients_text_en": "",
+  "labels_tags": [
+   "en:not-advised-for-specific-people",
+   "en:contains-milk",
+   "en:not-recommended-for-children-under-3-years",
+   "fr:tidy-man"
+  ],
+  "lang": "de",
+  "nutriscore_grade": "e",
+  "product_name": "kinder Überraschung",
+  "states_tags": [
+   "en:to-be-completed",
+   "en:nutrition-facts-completed",
+   "en:ingredients-completed",
+   "en:expiration-date-completed",
+   "en:packaging-code-to-be-completed",
+   "en:characteristics-to-be-completed",
+   "en:origins-to-be-completed",
+   "en:categories-completed",
+   "en:brands-completed",
+   "en:packaging-completed",
+   "en:quantity-completed",
+   "en:product-name-completed",
+   "en:photos-to-be-validated",
+   "en:packaging-photo-to-be-selected",
+   "en:nutrition-photo-selected",
+   "en:ingredients-photo-selected",
+   "en:front-photo-selected",
+   "en:photos-uploaded"
+  ],
+  "traces_tags": [],
+  "unknown_ingredients_n": 2
+ },
+ "result": {
+  "id": "product_found",
+  "lc_name": "Product found",
+  "name": "Product found"
+ },
+ "status": "success",
+ "warnings": []
+}
